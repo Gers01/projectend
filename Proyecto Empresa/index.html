@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOGUARD</title>
+
+    <!--este es el enlace con css-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- enlace de icono menu hamburguesa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- enlace icono ir arriba -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js"></script>
+
+    <!-- enlace con javascript -->
+    <script defer src="move.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- encabezado ↓ -->
+        <nav class="barra">
+
+            <div class="logo">
+                <img id="imagen" src="img/TECNO.jpg" alt="logo principal" height="80px" width="auto">
+            </div>
+
+            <!-- Aqui va el menu encabezado ↓ -->
+            <ul class="menu" id="menu">
+                <li class="enlace"><a data-scroll="principal" href="#inicio" class="boton">Quienes Somos</a></li>
+                <li class="enlace"><a data-scroll="articulos" href="#articulos" class="boton">Productos</a></li>
+                <li class="enlace"><a data-scroll="servicios" href="#servicios" class="boton">Servicios</a></li>
+                <li class="enlace"><a data-scroll="encuesta" href="#encuesta" class="boton">Catalogo</a></li>
+                <li class="enlace"><a data-scroll="pie" href="#pie" class="boton">Información y Contacto</a></li>
+
+            </ul>
+
+            <a href="javascript:void(0);" class="icon" onclick="miFuncion()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+        </nav>
+    </header>
+
+    <!--Aqui va el video representativo ↓ -->
+    <div class="presentacion" id="inicio">
+        <h1 id="pregunta">Quienes Somos?.. <br>Aca en el video te demostramos →</h1>
+        <div class="prueba">
+            <video class="video" controls="controls" width="50%">
+                <source src="video/EMPRESA.mp4" type="video/ogg">
+            </video>
+        </div>
+    </div>
+
+    <!--Contenido de la pagina ↓-->
+    <main>
+        <!--Aqui empieza la seccion de productos ↓ -->
+        <h2 class="seccion" id="articulos">Productos</h2>
+        <article class="product">
+            <img src="img/gaming.png" alt="" height="280px" width="280px">
+            <p class="descripcion"> Cajon PC completo con todo instalado</p>
+        </article>
+
+        <article class="product">
+            <img src="img/teclado.jpg" alt="" height="280px" width="280px">
+            <p class="descripcion">Teclado Gaming Iluminado</p>
+        </article>
+
+        <article class="product">
+            <img src="img/lapgaming.jpg" alt="" height="280px" width="280px">
+            <p class="descripcion">Laptop Gaming con teclado Iluminado</p>
+        </article>
+
+        <article class="product">
+            <img src="img/mouse.png" alt="" height="280px" width="280px">
+            <p class="descripcion">Mouse LED USB Gaming</p>
+        </article>
+
+        <article class="product">
+            <img src="img/laptop.jpg" alt="" height="280px" width="280px">
+            <p class="descripcion">Laptop para trabajo</p>
+        </article>
+
+        <article class="product">
+            <img src="img/procesador.png" alt="" height="280px" width="280px">
+            <p class="descripcion">procesadores</p>
+        </article>
+    </main>
+
+    <!--Aqui empieza la seccion de servicios ↓ -->
+    <main class="main2">
+        <h2 class="seccion" id="servicios">Servicios</h2>
+        <article class="product2">
+            <img src="img/soporte.jpg" alt="" height="200px" width="280px">
+            <p class="descripcion"><strong>Mantenimiento a Equipos</strong></p>
+        </article>
+
+        <article class="product2">
+            <img src="img/sistema.png" alt="" height="200px" width="280px">
+            <p class="descripcion"><strong>Instalacion de Sistemas Operativos</strong></p>
+        </article>
+
+        <article class="product2">
+            <img src="img/FORMATEO-COMPUTADORES-1.jpg" alt="" height="200px" width="280px">
+            <p class="descripcion"><strong>Formateo de computadoras</strong></p>
+        </article>
+
+        <article class="product2">
+            <img src="img/office.png" alt="" height="200px" width="280px">
+            <p class="descripcion"><strong>Instalamos office y de mas Programas.</strong></p>
+        </article>
+
+        <article class="product2">
+            <img src="img/Antivirus.png" alt="" height="200px" width="280px">
+            <p class="descripcion"><strong>Limpiamos y protegemos de virus su equipo</strong></p>
+        </article>
+
+        <article class="product2">
+            <img src="img/mantenimiento.jpg" alt="" height="200px" width="280px">
+            <p class="descripcion"><strong>Reparamos y dejamos como nuevo su equipo</strong></p>
+        </article>
+    </main>
+
+    <!--Encuesta y catalogo ↓ -->
+    <article class="catalogoencuesta" id="encuesta">
+        <h2 class="seccion">Encuesta.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, illo!
+            Dignissimos possimus fugit, facilis beatae quis reiciendis impedit ipsam dolores.
+            Quibusdam enim dicta ipsum, libero soluta nisi facere eius placeat.
+            Totam, ratione? Dolorem dolore et tempore iusto ex debitis voluptate.
+            Autem omnis, vel nobis dolore quia delectus tenetur quae a?
+            Eius quo veritatis qui voluptatem amet velit, ducimus pariatur ullam.
+            Ipsam repellat ea fuga quas sunt cumque, consequuntur laborum repellendus.
+            Tenetur, vero fugit! Culpa ipsa voluptas itaque molestias architecto quisquam.
+            Cumque, iusto ipsa tempora obcaecati nam tenetur repudiandae quo ducimus.
+            Officia laboriosam atque iure, incidunt veritatis earum quam optio molestiae. </p>
+
+        <img src="img/iconos/encuesta.png" alt="" height="auto" width="35px">
+        <h5>Ayudanos respondiendo nuestra Encuesta</h5>
+
+        <h3 class="seccion"><ins>Catalogo.</ins></h3>
+        <img src="img/iconos/simbolo pdf.png" alt="" height="auto" width="35px">
+        <h5>Catalago_TechnoGuard_Agosto2021.pdf</h5>
+
+    </article>
+
+    <!-- boton ir arriba -->
+    <div id="button-up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- aqui va el pie de la pagina ↓ -->
+    <footer id="pie">
+        <section class="informacion">
+            <!--Informacion y Contacto de empresa ↓ -->
+            <h2>Información y Contacto</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed dolor erat.
+                Integer nec pulvinar odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Curabitur finibus enim ac justo ornare lobortis. Phasellus odio lacus, fringilla sit amet
+                sem eget, eleifend elementum velit. </p>
+
+            <div class="smicon">
+
+                <img class="icono1" src="img/iconos/telegrama.png" alt="" height="auto" width="35px">
+                <img class="icono1" src="img/iconos/whatsapp.png" alt="" height="auto" width="35px">
+                <img class="icono1" src="img/iconos/facebook.png" alt="" height="auto" width="35px">
+                <img class="icono1" src="img/iconos/instagram.png" alt="" height="auto" width="35px">
+            </div>
+            <h5 class="copy">copyright ©TechnoGuard 2021.Todos lo derechos reservados.</h5>
+        </section>
+    </footer>
+</body>
+
+</html>

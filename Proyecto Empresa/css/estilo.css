@@ -1,0 +1,224 @@
+body {
+  background-image: url(./fondo/fondo.svg);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --------------barra de navegacion--------------*/
+.header {
+  background: #1a6857;
+  border-radius: 1px;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* espacio de los botones y logo */
+.barra {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* estilo de botones enlaces */
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 0 10px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-size-adjust: auto;
+}
+
+/* posicion botones barra menu */
+.menu {
+  display: flex;
+  margin-right: 15px;
+  list-style: none;
+  max-width: 100%;
+}
+
+/* contenedor enlace menu */
+.boton {
+  padding: 8px 6px 30px;
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+
+/* hover enlaces de menu */
+.boton:hover {
+  background: linear-gradient(#ed2aff, #31ff2a);
+  transition: ease-in-out;
+}
+
+/* titulo h1 */
+h1 {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px #effc41;
+  margin-right: 30px;
+}
+
+/* contenedor de presentacion */
+.presentacion {
+  background-image: url(./fondo/fondo6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 120px 10px;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  display: block;
+}
+
+#pregunta {
+  float: left;
+}
+
+/* icono hamburguesa */
+.icon {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .video {
+    height: auto;
+    width: 90%;
+    padding: 0;
+    align-items: center;
+    bottom: 0%;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .header #menu {
+    display: none;
+    background-color: #2c3e50;
+    position: absolute;
+    margin-top: 60px;
+    width: 100%;
+    z-index: 99;
+  }
+
+  #imagen {
+    height: 60px;
+    font-size: 25px;
+    padding: 0 10px;
+    line-height: 10px;
+  }
+
+  .enlace {
+    line-height: 70px;
+  }
+
+  .boton:hover {
+    background: none;
+    color: #83c5f7;
+  }
+
+  .icon {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: block;
+  }
+  .active {
+    background-color: #83c5f7;
+    color: white;
+  }
+}
+
+/*Boton de ir arriba*/
+#button-up {
+  width: 60px;
+  height: 60px;
+  background: #1a6857;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  transform: scale(0);
+}
+#button-up:hover {
+  transform: scale(1.1);
+  border-color: black;
+}
+
+/* --------------productos y servicios--------------*/
+h2 {
+  margin-top: 10px;
+}
+
+/* contenedor de los productos */
+.product,
+.product2 {
+  float: left;
+  padding: 10px;
+
+  border-style: solid;
+  position: initial;
+  background-color: rgb(136, 136, 136);
+  margin: 25px;
+  padding: 1rem;
+  padding-bottom: 0rem;
+}
+
+/* contenedor de imagen */
+.product img,
+.product2 img {
+  background-color: white;
+  margin: auto;
+}
+
+/*esta es la descripcion de cada producto*/
+.descripcion {
+  background-color: lawngreen;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.descripcion:hover {
+  background: linear-gradient(lawngreen, #ff53bd);
+}
+
+main,
+.main2 {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* --------------pie de pagina--------------*/
+.informacion {
+  border: double;
+  border-radius: 5px;
+  text-align: justify;
+  background-image: url(./fondo/fondo.svg);
+  padding: 10px;
+}
